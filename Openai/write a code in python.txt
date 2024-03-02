@@ -1,0 +1,34 @@
+OpenAI response for Prompt using artificial intelligence write a code in python 
+ *********************************************  
+
+Sure, here's an example of a simple code using artificial intelligence in Python:
+
+```
+import random
+
+# Define a list of words
+words = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+
+# Define a function to generate a random word
+def generate_random_word():
+    return random.choice(words)
+
+# Define a function to guess the word
+def guess_word():
+    word_to_guess = generate_random_word()
+    guessed_word = ''
+    
+    while guessed_word != word_to_guess:
+        guessed_word = input('Guess the word: ')
+        
+        if guessed_word == word_to_guess:
+            print('Congratulations! You guessed it right.')
+            break
+        else:
+            print('Wrong guess. Try again.')
+
+# Run the game
+guess_word()
+```
+
+In this code, artificial intelligence is used to randomly select a word from a list and the user is prompted to input their guess. If the guess matches the selected word, a success message is displayed, otherwise, the user is prompted to try again.

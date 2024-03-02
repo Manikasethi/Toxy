@@ -1,0 +1,39 @@
+OpenAI response for Prompt  using artificial intelligence write a python program to create a star using turtle 
+ *************************  
+
+To create a star using the turtle graphics module in Python, we can write a program that uses artificial intelligence to plot the star points dynamically. Here's an example program that accomplishes this:
+
+```python
+import turtle
+
+def create_star(t, size):
+    for _ in range(5):
+        t.forward(size)
+        t.right(144)
+
+def main():
+    wn = turtle.Screen()
+    wn.bgcolor("black")
+
+    pen = turtle.Turtle()
+    pen.color("white")
+    pen.speed(3)
+
+    size = 100
+
+    # Move turtle to starting position
+    pen.penup()
+    pen.goto(-size/2, size/2)
+    pen.pendown()
+
+    create_star(pen, size)
+
+    turtle.done()
+
+if __name__ == "__main__":
+    main()
+```
+
+This program uses the `turtle` module to create a window and a turtle object. The `create_star()` function takes in a turtle object `t` and the size of the star `size`. It uses a loop to draw the five sides of the star by moving the turtle forward and turning it right by 144 degrees.
+
+In the `main()` function, a turtle object is created with a white color, and the turtle's speed is

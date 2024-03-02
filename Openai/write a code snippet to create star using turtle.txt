@@ -1,0 +1,24 @@
+OpenAI response for Prompt using artificial intelligence write a code snippet to create star using turtle 
+ *********************************************  
+
+import turtle
+
+# Create turtle graphics window
+window = turtle.Screen()
+window.bgcolor("black")
+
+# Create turtle object
+star = turtle.Turtle()
+star.speed(10)
+
+# Function to draw a star
+def draw_star():
+    for _ in range(5):
+        star.forward(100)
+        star.right(144)
+
+# Call the function to draw the star
+draw_star()
+
+# Keep the window open
+turtle.mainloop()

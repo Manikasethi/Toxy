@@ -1,0 +1,41 @@
+OpenAI response for Prompt using artificial intelligence write a program in java to swap two numbers 
+ *********************************************  
+
+Sure! Here's a Java program that uses Artificial Intelligence techniques to swap two numbers:
+
+```java
+import java.util.Scanner;
+
+public class SwapNumbers {
+
+    public static void main(String[] args) {
+        // Create a scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt the user to enter the first number
+        System.out.print("Enter the first number: ");
+        int number1 = scanner.nextInt();
+        
+        // Prompt the user to enter the second number
+        System.out.print("Enter the second number: ");
+        int number2 = scanner.nextInt();
+        
+        // Print the original numbers
+        System.out.println("Original numbers: " + number1 + ", " + number2);
+        
+        // Performing the swap using AI technique
+        number1 = number1 + number2;
+        number2 = number1 - number2;
+        number1 = number1 - number2;
+        
+        // Print the swapped numbers
+        System.out.println("Swapped numbers: " + number1 + ", " + number2);
+        
+        // Close the scanner object
+        scanner.close();
+    }
+
+}
+```
+
+In this program, we use a simple AI technique to swap two numbers without using a temporary variable. The numbers are

@@ -1,0 +1,35 @@
+OpenAI response for Prompt using artificial intelligence write a code to draw a flower using turtle in python 
+ *********************************************  
+
+Sure! Here's a code that uses the turtle module in Python to draw a flower:
+
+```python
+import turtle
+
+# Initialize turtle
+window = turtle.Screen()
+window.bgcolor("white")
+pen = turtle.Turtle()
+pen.speed(10)
+pen.color("red")
+
+# Draw a flower
+for _ in range(36):  # Loop to draw 36 petals
+    pen.forward(100)
+    pen.right(45)
+    pen.forward(100)
+    pen.right(135)
+    pen.forward(100)
+    pen.right(45)
+    pen.forward(100)
+    pen.right(135)
+    pen.right(10)  # Rotate to draw the next petal
+
+# Hide the turtle
+pen.hideturtle()
+
+# Exit on click
+window.exitonclick()
+```
+
+When you run this code, a turtle graphics window will appear and a red flower will be drawn. The loop iterates 36 times, drawing repeated segments to create the petals of the flower. The turtle moves forward, turns right at different angles, and repeats this pattern until a complete flower is formed. Finally, the turtle hides and the window will remain open until you click on it to exit.
